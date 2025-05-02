@@ -1,0 +1,48 @@
+.slider-main{
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.slide-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.poster{
+  height: 200px;
+  border-radius: 20px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.poster img{
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.blockbuster-sec{
+  height: auto;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.blockbuster-sec img{
+  height: auto;
+  width: 100%;
+}   
+
+.subTrend {
+  width: 15%;
+  height: 220px;
+}
+
+.subTrend img
+{
+  height: 220px;
+  width: 100%;
+}

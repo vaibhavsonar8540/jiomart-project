@@ -1,0 +1,98 @@
+.navbar {
+    background-color: #0C5273;
+    padding: 7px 0 0 0;
+    height: 57px;
+  }
+  
+  .navbar-container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .navbar-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: white;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    width: 9%;
+    position: relative;
+  }
+  
+  .navbar-submenu {
+    display: none;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    background-color: whitesmoke;
+    color: gray;
+    z-index: 1000;
+    padding: 20px 30px;
+    list-style: none;
+    width: 150px;
+    height: max-content;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+   
+  }
+  
+
+  .navbar-submenu li{
+    padding: 7px 0px ;
+  }
+
+  .navbar-submenu li:hover{
+    background-color: #d2f0f7;
+    color: black;
+  }
+  
+  .navbar-item:hover .navbar-submenu {
+    display: block;
+  }
+  
+  .new-badge {
+    background-color: #25AB21;
+    color: white;
+    margin-left: 20px;
+    border: 1px solid black;
+    padding: 2px 5px;
+  }
+  
+  .navbar-subsubmenu1 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* This places it just outside the parent li to the right */
+    background-color: white;
+    padding: 10px 20px;
+    list-style: none;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 1001;
+    white-space: nowrap;
+  }
+  
+  .navbar-submenu li {
+    position: relative; /* Needed so nested ul positions relative to this li */
+    color: gray;
+  }
+  
+  .navbar-submenu li:hover .navbar-subsubmenu1 {
+    display: block;
+    
+  }
+  .navbar-submenu li:hover {
+    color: black;
+  }
+  
+  .footer:hover {
+    background-color: lightgray;
+  }
+
+
+ 
+  
