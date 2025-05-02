@@ -46,3 +46,40 @@
   height: 220px;
   width: 100%;
 }
+
+/* top category */
+.topCategory
+{
+  width: 100%;
+  margin-top: 50px;
+}
+.SubTopCategory{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.SubTopCategory img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.categorySec{
+  width: 15.5%;
+
+}
+.categorySec img{
+  width: 100%;
+  height: auto;
+}
+
+.cricketSec{
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+.cricketSec img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}

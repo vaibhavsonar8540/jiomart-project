@@ -70,6 +70,7 @@ const Home = () => {
   return (
     <div className="slider-main">
      
+      {/* slider */}
         <Swiper
           modules={[Navigation, Autoplay]}
           slidesPerView={3}
@@ -101,10 +102,12 @@ const Home = () => {
           ))}
         </Swiper>
 
+          {/* poster */}
         <div className="poster">
           <Link><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1746036953_2368-x-400.jpg?im=Resize=(2368,400)" alt="" /></Link>
         </div>
 
+          {/* second slider */}
         <Swiper
           modules={[Navigation, Autoplay]}
           slidesPerView={3}
@@ -136,10 +139,12 @@ const Home = () => {
           ))}
         </Swiper>
 
+          {/* blockbuster */}
         <div className="blockbuster-sec">
           <Link to={'#'}><img src="/banner.png" alt="" /></Link>
         </div>
 
+          {/* trending deals */}
         <div className="trendingDealsSec">
           <h2 style={{fontFamily:"sans-serif"}}>Trending Deals</h2>
           
@@ -165,7 +170,38 @@ const Home = () => {
           </div>
         </div>
 
-        
+          {/* top category */}
+        <div className="topCategory">
+        <div className="SubTopCategory">
+          <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1743420471_Shop_Top_2368x400.jpg?im=Resize=(2368,400)" alt="" />
+        </div>
+
+        <div style={{display:"flex",justifyContent:"space-between",marginTop:"10px"}}>
+          <div className="categorySec">
+            <Link><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1745429148_Shop-Top--1-.jpg?im=Resize=(368,538)" alt="" /></Link>
+          </div>
+          <div className="categorySec">
+            <Link><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1745429184_Shop-Top--3-.jpg?im=Resize=(368,538)" alt="" /></Link>
+          </div>
+          <div className="categorySec">
+            <Link><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1745429219_Shop-Top--2-.jpg?im=Resize=(368,538)" alt="" /></Link>
+          </div>
+          <div className="categorySec">
+            <Link><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1745767425_1.jpg?im=Resize=(368,538)" alt="" /></Link>
+          </div>
+          <div className="categorySec">
+            <Link><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1745767405_2.jpg?im=Resize=(368,538)" alt="" /></Link>
+          </div>
+          <div className="categorySec">
+            <Link><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1745863162_3.jpg?im=Resize=(368,538)" alt="" /></Link>
+          </div>
+        </div>
+        </div>
+
+        {/* cricket poster */}
+        <div className="cricketSec">
+          <Link><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1743443394_1p_web.jpg?im=Resize=(2368,400)" alt="" /></Link>
+        </div>
       </div>
   
   );
