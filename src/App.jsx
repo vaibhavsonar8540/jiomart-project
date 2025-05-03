@@ -1,7 +1,7 @@
+import AllRoutes from './AllRoutes'
 import Footer from './components/Footer'
-import NavbarDown from './components/NavbarDown'
 import NavbarUp from './components/NavbarUp'
-import Home from './Pages/Home'
+
 
 function App() {
 
@@ -10,8 +10,7 @@ function App() {
 
   <div>
      <NavbarUp/>
-     <NavbarDown/>
-     <Home/>
+     <AllRoutes/>
      <Footer/>
   </div>
   )

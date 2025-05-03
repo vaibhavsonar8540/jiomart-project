@@ -1,0 +1,648 @@
+{
+    "icecream": [
+      {
+        "id": 1,
+        "title": "The Brooklyn Creamery Vanilla Cookie",
+        "image": "https://www.jiomart.com//images/product/original/rvmm6g5jb8/the-brooklyn-creamery-vanilla-cookie-ice-cream-sandwich-zero-added-sugar-dairy-free-product-images-orvmm6g5jb8-p611287832-0-202504080306.jpg?im=Resize=(310,310)",
+        "price": 225,
+        "originalPrice": 280,
+        "discount": "19% OFF",
+        "link": "https://www.jiomart.com/p/localshops/the-brooklyn-creamery-vanilla-cookie-ice-cream-sandwich-zero-added-sugar-dairy-free/611287832"
+      },
+      {
+        "id": 2,
+        "title": "The Brooklyn Creamery Chocoholic Chocobar",
+        "image": "https://www.jiomart.com//images/product/original/rv9dmlnjht/the-brooklyn-creamery-chocoholic-chocobar-ice-cream-stick-zero-added-sugar-low-calorie-product-images-orv9dmlnjht-p611287897-0-202504081006.jpg?im=Resize=(310,310)",
+        "price": 449,
+        "originalPrice": 499,
+        "discount": "10% OFF",
+        "link": "https://www.jiomart.com/p/localshops/the-brooklyn-creamery-chocoholic-chocobar-ice-cream-stick-zero-added-sugar-low-calorie/611287897"
+      },
+      {
+        "id": 3,
+        "title": "The Brooklyn Creamery Sweet Cream Vanilla",
+        "image": "https://www.jiomart.com//images/product/original/rvpz3onofd/the-brooklyn-creamery-sweet-cream-vanilla-chocobar-ice-cream-stick-zero-added-sugar-low-calorie-product-images-orvpz3onofd-p611274209-0-202504031513.jpg?im=Resize=(310,310)",
+        "price": 449,
+        "originalPrice": 499,
+        "discount": "10% OFF",
+        "link": "https://www.jiomart.com/p/localshops/the-brooklyn-creamery-sweet-cream-vanilla-chocobar-ice-cream-stick-zero-added-sugar-low-calorie/611274209"
+      },
+      {
+        "id": 4,
+        "title": "The Brooklyn Creamery Butterscotch",
+        "image": "https://www.jiomart.com//images/product/original/rvdy3kajib/the-brooklyn-creamery-butterscotch-ice-cream-tub-zero-added-sugar-product-images-orvdy3kajib-p611287627-0-202504072243.jpg?im=Resize=(310,310)",
+        "price": 449,
+        "originalPrice": 599,
+        "discount": "25% OFF",
+        "link": "https://www.jiomart.com/p/localshops/the-brooklyn-creamery-butterscotch-ice-cream-tub-zero-added-sugar/611287627"
+      },
+      {
+        "id": 5,
+        "title": "The Brooklyn Creamery Sea Salt Caramel",
+        "image": "https://www.jiomart.com//images/product/original/rvcgsmclhq/the-brooklyn-creamery-sea-salt-caramel-ice-cream-tub-zero-added-sugar-low-calorie-product-images-orvcgsmclhq-p611287624-0-202504072243.jpg?im=Resize=(310,310)",
+        "price": 449,
+        "originalPrice": 599,
+        "discount": "25% OFF",
+        "link": "https://www.jiomart.com/p/localshops/the-brooklyn-creamery-sea-salt-caramel-ice-cream-tub-zero-added-sugar-low-calorie/611287624"
+      },
+      {
+        "id": 6,
+        "title": "The Brooklyn Creamery Cookie Brownie",
+        "image": "https://www.jiomart.com//images/product/original/rv0i7le3te/the-brooklyn-creamery-cookie-brownie-ice-cream-tub-zero-added-sugar-dairy-free-product-images-orv0i7le3te-p611287620-0-202504072243.jpg?im=Resize=(310,310)",
+        "price": 499,
+        "originalPrice": 599,
+        "discount": "16% OFF",
+        "link": "https://www.jiomart.com/p/localshops/the-brooklyn-creamery-cookie-brownie-ice-cream-tub-zero-added-sugar-dairy-free/611287620"
+      },
+      {
+        "id": 7,
+        "title": "The Brooklyn Creamery Chocoholic Ice Cream",
+        "image": "https://www.jiomart.com//images/product/original/rvthmdqnwm/the-brooklyn-creamery-chocoholic-ice-cream-tub-zero-added-sugar-product-images-orvthmdqnwm-p611287720-0-202504072306.jpg?im=Resize=(310,310)",
+        "price": 449,
+        "originalPrice": 599,
+        "discount": "25% OFF",
+        "link": "https://www.jiomart.com/p/localshops/the-brooklyn-creamery-chocoholic-ice-cream-tub-zero-added-sugar/611287720"
+      },
+      {
+        "id": 8,
+        "title": "The Brooklyn Creamery Raspberry Sorbet",
+        "image": "https://www.jiomart.com//images/product/original/rvlxefziyo/the-brooklyn-creamery-raspberry-sorbet-ice-cream-tub-zero-added-sugar-dairy-free-product-images-orvlxefziyo-p611287619-0-202504072243.jpg?im=Resize=(310,310)",
+        "price": 499,
+        "originalPrice": 599,
+        "discount": "16% OFF",
+        "link": "https://www.jiomart.com/p/localshops/the-brooklyn-creamery-raspberry-sorbet-ice-cream-tub-zero-added-sugar-dairy-free/611287619"
+      },
+      {
+        "id": 9,
+        "title": "The Brooklyn Creamery Kulfi Ice Cream",
+        "image": "https://www.jiomart.com//images/product/original/rvm1lmft6g/the-brooklyn-creamery-kulfi-ice-cream-tub-zero-added-sugar-product-images-orvm1lmft6g-p611287936-0-202504081106.jpg?im=Resize=(310,310)",
+        "price": 449,
+        "originalPrice": 599,
+        "discount": "25% OFF",
+        "link": "https://www.jiomart.com/p/localshops/the-brooklyn-creamery-kulfi-ice-cream-tub-zero-added-sugar/611287936"
+      }
+    ],
+
+    
+      "electronics": [
+        {
+          "id": 1,
+          "name": "Sony 65 Inches 4K Ultra HD LED Smart TV",
+          "price": "₹56,990.00",
+          "original_price": "₹89,990.00",
+          "discount": "37% Off",
+          "tag": "Best Seller",
+          "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQre4XvGQuprPo0vBIfzuY9edKFBdSiGtRzEC3Mrzu-TJdcnbskIpIxxkT5yCpn3aJDtZp-2ZHWqMQ5oWFRzovnwchVeJPBfYHU-bte2C4GxbMHy0SrEUZgzw",
+          "link": "https://www.jiomart.com/p/electronics/sony-65-inches-4k-ultra-hd-led-smart-tv/577566850"
+        },
+        {
+          "id": 2,
+          "name": "Samsung 43 Inches Full HD LED Smart TV",
+          "price": "₹35,999.00",
+          "original_price": "₹59,999.00",
+          "discount": "40% Off",
+          "tag": "Popular",
+          "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRZQIABIMYmWVC-DQf3TEK2GlDWWRM8bANKOZuMT2uAY4f6faClFP7MxSJNwuGOBrgtk5tMxH_lXRUFxfTttsn6OVXoqbEW8q4euA3kd9pHa1v162r9J7Qw",
+          "link": "https://www.jiomart.com/p/electronics/samsung-43-inches-full-hd-led-smart-tv/577566780"
+        },
+        {
+          "id": 3,
+          "name": "Bose SoundLink Flex Bluetooth Speaker",
+          "price": "₹15,999.00",
+          "original_price": "₹19,999.00",
+          "discount": "20% Off",
+          "tag": null,
+          "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTg8REuzR5ASLvy24dEqlgXd-01luXO275Bn7RvuHLqGZLNRGLGESmstLshOtvwR0PVkFuyeehsPjXRfKWpLppzdx4zXJw-FpLq3VhHs9QBvhb_xar7Bb_8DA",
+          "link": "https://www.jiomart.com/p/electronics/bose-soundlink-flex-bluetooth-speaker/611016133"
+        },
+        {
+          "id": 4,
+          "name": "Apple AirPods Pro (2nd generation)",
+          "price": "₹23,900.00",
+          "original_price": "₹29,900.00",
+          "discount": "20% Off",
+          "tag": null,
+          "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT4XApnTz8t_UmQUhDYpI-S6qQFbb1y5JmcYFrbumUsuFt0UoJPhj0v2mXqw40gop_cQcwi9bfC3uVx620jXtD-cELxvHMWjT8VkYT4DFVMrZ1o9tuxMEd6",
+          "link": "https://www.jiomart.com/p/electronics/apple-airpods-pro-2nd-generation/611016156"
+        },
+        {
+          "id": 5,
+          "name": "Philips Sonicare HX6237/25 Electric Toothbrush",
+          "price": "₹8,499.00",
+          "original_price": "₹12,999.00",
+          "discount": "34% Off",
+          "tag": null,
+          "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSAtBVUc_I_JRTE7pa5PhVz79JWtApSG5LalAFbsIaq9rtzerNruyFDk_80eE1aAJdXdtXyWRQ3qKYV64ncEQOlr7oe1zmYUruSX8NjuU0K02NnAiZ2DFVq",
+          "link": "https://www.jiomart.com/p/electronics/philips-sonicare-hx6237-25-electric-toothbrush/611139924"
+        },
+        {
+          "id": 6,
+          "name": "Mi 10000 mAh Power Bank 3i",
+          "price": "₹899.00",
+          "original_price": "₹1,199.00",
+          "discount": "25% Off",
+          "tag": null,
+          "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTI1eEkX0fh0BFlNWaqdNyL_irpzKijFDrxsVrZCveCADWvRezcYvlp7trsdwC_QB5bTqZzPnHbbpmzhlvfWFmlYZx0Dzq2m_5xqo1TQjw5qn6EqOYxTAGpb3M",
+          "link": "https://www.jiomart.com/p/electronics/mi-10000-mah-power-bank-3i/611169987"
+        },
+        {
+          "id": 7,
+          "name": "Xiaomi 12 Pro 5G, 12 GB RAM, 256 GB Storage, Green",
+          "price": "₹56,999.00",
+          "original_price": "₹62,999.00",
+          "discount": "10% Off",
+          "tag": null,
+          "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT_D9_hp0APTdg5EIwXwFUC_8Y2nkg0YodS2Ql1ATeVDZ8ysyCTvgQUK00uZwqonRJmiUBKmXHLsUjBzMYmmkMod2pAdK0Ybt3xpFNaZqX5DCUWCXP7fgHBdQ",
+          "link": "https://www.jiomart.com/p/electronics/xiaomi-12-pro-5g-12-gb-ram-256-gb-storage-green/577566701"
+        },
+        {
+          "id": 8,
+          "name": "Oppo F19 Pro+ 5G, 128 GB, 8 GB RAM, Fluid Black, Mobile Phone",
+          "price": "₹22,999.00",
+          "original_price": "₹27,999.00",
+          "discount": "18% Off",
+          "tag": null,
+          "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRr1j06jWol3am3NC9cQ4gXRP2V-DmMgaUnY_aVjujMKcFmH_si9gmymxSJ6Q3Qcz-o3i2picQpNd-GBNveVHvabQJ7F-6fsNvkY3N9A8IeADZjCrIb9-Nu",
+          "link": "https://www.jiomart.com/p/electronics/oppo-f19-pro-5g-128-gb-8-gb-ram-fluid-black-mobile-phone/590042291"
+        },
+        {
+          "id": 9,
+          "name": "Samsung Galaxy S22 Ultra, 12 GB RAM, 256 GB Storage, Phantom Black",
+          "price": "₹119,999.00",
+          "original_price": "₹128,999.00",
+          "discount": "7% Off",
+          "tag": null,
+          "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRc5QzKRIezEDPLJsfKoiVCCiUI4UXK0d5W4n5rjn0NtpKQ-bFjxszcaSQ0Sj8ESnYmg6MtgpF4jWdDfyC-CyNEly9iX-Sj_q1dGG4jZo0t__IpEP6jJAf57g",
+          "link": "https://www.jiomart.com/p/electronics/samsung-galaxy-s22-ultra-12-gb-ram-256-gb-storage-phantom-black/611168511"
+        },
+        {
+          "id": 10,
+          "name": "Realme Narzo 50 Pro 5G, 128 GB, 6 GB RAM, Hyper Black, Mobile Phone",
+          "price": "₹18,999.00",
+          "original_price": "₹20,999.00",
+          "discount": "9% Off",
+          "tag": null,
+          "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTpdQn6BWyp8P1L0UCdmoMH2Got6TSC3Bfw4xEKzo3Zd3sphryh0D_VseZlCD9yV0qqKOYPj9CydaIvasfBxri44VjCO8sL7bflyfCuicYTsPlD0KsgJmDe3Q",
+          "link": "https://www.jiomart.com/p/electronics/realme-narzo-50-pro-5g-128-gb-6-gb-ram-hyper-black-mobile-phone/611018007"
+        }
+      ],
+
+      "home":[
+        {
+            "id": 1,
+            "image": "https://www.jiomart.com/images/product/original/rvv7xs5bup/lexcorp-green-polyester-strolley-duffel-bag-70l-large-product-images-orvv7xs5bup-p599585593-0-202502201838.jpg?im=Resize=(360,360)",
+            "name": "LEXCORP Green Polyester Strolley Duffel Bag 70L (Large)",
+            "price": 249.00,
+            "original_price": 3599.00,
+            "discount": "93% Off"
+        },
+        {
+            "id": 2,
+            "image": "https://www.jiomart.com/images/product/original/rvqqxdi1i6/salutary-lunch-bag-for-kids-school-college-and-office-tote-travel-tiffin-bag-reusable-lunch-box-container-for-school-work-office-travel-picnic-black-product-images-orvqqxdi1i6-p611208658-0-202503251132.jpg?im=Resize=(360,360)",
+            "name": "SALUTARY Lunch Bag for Kids School, College and Office | Tote Travel Tiffin Bag Reusable Lunch Box Container for School Work Office Travel Picnic ( Black)",
+            "price": 119.00,
+            "original_price": 999.00,
+            "discount": "88% Off"
+        },
+        {
+            "id": 3,
+            "image": "https://www.jiomart.com/images/product/original/rvmmpcxm88/aditi-toys-magnetic-slate-magnetic-drawing-board-for-learning-writing-and-drawing-magnetic-pen-and-stamps-magnetic-slate-easy-to-use-and-clean-magnetic-board-for-kids-above-3-bis-approved-yellow-product-images-orvmmpcxm88-p609466244-0-202407041050.jpg?im=Resize=(360,360)",
+            "name": "Aditi Toys Magnetic Slate, Magnetic Drawing Board for Learning Writing and Drawing, Magnetic Pen and Stamps, Magnetic Slate Easy to Use and Clean, Magnetic Board for Kids Above 3, BIS Approved (Yellow)",
+            "price": 152.00,
+            "original_price": 399.00,
+            "discount": "61% Off"
+        },
+        {
+            "id": 4,
+            "image": "https://www.jiomart.com/images/product/original/494241241/toy-cloud-sticker-less-3-d-cube-3-x-3-product-images-o494241241-p605101377-0-202310092051.jpg?im=Resize=(360,360)",
+            "name": "Toy Cloud 3x3 Stickerless 3D Puzzle Cube",
+            "price": 99.00,
+            "original_price": 299.00,
+            "discount": "66% Off"
+        },
+        {
+            "id": 5,
+            "image": "https://www.jiomart.com/images/product/original/rvuqfmyqmb/krisha-book-manufacturing-notebooks-single-line-a4-size-long-book-172-pages-29-7-cm-x-20-5-cm-pack-of-3-product-images-orvuqfmyqmb-p611294830-0-202504092011.jpg?im=Resize=(360,360)",
+            "name": "Krisha Book Manufacturing - Notebooks - Single Line, A4 Size Long Book, 172 Pages, 29.7 cm X 20.5 cm - Pack of 3",
+            "price": 149.00,
+            "original_price": 285.00,
+            "discount": "47% Off"
+        },
+        {
+            "id": 6,
+            "image": "https://www.jiomart.com/images/product/original/rvt1ffgfuo/krisha-book-manufacturing-single-line-a4-size-long-notebook-200-pages-30cm-21cm-pack-of-5-product-images-orvt1ffgfuo-p611255226-0-202503290001.jpg?im=Resize=(360,360)",
+            "name": "Krisha Book Manufacturing- Single Line A4 Size Long Notebook 200 Pages , 30cm*21cm (Pack Of 5)",
+            "price": 339.00,
+            "original_price": 550.00,
+            "discount": "38% Off"
+        },
+        {
+            "id": 7,
+            "image": "https://www.jiomart.com/images/product/original/rvxu2e0vht/faverito-plastic-hand-juicer-nano-fruit-juicer-light-weight-hand-juicer-food-plastic-material-pack-of-1-product-images-orvxu2e0vht-p610078960-0-202410071503.jpg?im=Resize=(360,360)",
+            "name": "Faverito Plastic Hand Juicer Nano Fruit Juicer, Light Weight Hand Juicer Food Plastic Material(Pack of 1)",
+            "price": 119.00,
+            "original_price": 999.00,
+            "discount": "88% Off"
+        },
+        {
+            "id": 8,
+            "image": "https://www.jiomart.com/images/product/original/rvioj9c2jw/ddecora-18-pcs-3-different-size-plastic-food-snack-bag-pouch-clip-sealer-large-medium-small-plastic-snack-seal-sealing-bag-clips-vacuum-sealer-multicolor-product-images-orvioj9c2jw-p610792271-0-202412231738.jpg?im=Resize=(360,360)",
+            "name": "DDecora 18 Pcs - 3 Different Size Plastic Food Snack Bag Pouch Clip Sealer Large,Medium,Small Plastic Snack Seal Sealing Bag Clips Vacuum Sealer (Multicolor)",
+            "price": 119.00,
+            "original_price": 300.00,
+            "discount": "60% Off"
+        },
+        {
+            "id": 9,
+            "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQAUJdW7gWmWCliwewBiY3bQGrsrSDpHEWp3U6K22i2RqrISh8M4ygiKTibzsyzjc1AHclMHrneHVazHwauCh2-RnjqR7U5N2IuCoyfz2JkrxU9-tJ4tX4HZg",
+            "name": "Liora Paper Napkin 100 Pulls Regular Size 30cm X 27cm (400 napkins; 100 each x Pack of 4); Multi-purpose Tissue Papers",
+            "price": 99.00,
+            "original_price": 180.00,
+            "discount": "45% Off"
+        },
+        {
+            "id": 10,
+            "image": "https://www.jiomart.com/images/product/original/rvpjoaj6ao/salutary-mosquito-racket-bat-powerful-rechargeable-mosquito-killer-racket-bat-to-hit-mosquito-product-images-orvpjoaj6ao-p611261526-0-202504141720.jpg?im=Resize=(360,360)",
+            "name": "SALUTARY Mosquito Racket Bat |Powerful & Rechargeable | Mosquito Killer Racket | Bat to Hit Mosquito",
+            "price": 165.00,
+            "original_price": 499.00,
+            "discount": "66% Off"
+        },
+        {
+            "id": 11,
+            "image": "https://www.jiomart.com/images/product/original/rvldpcv1fm/clay-plus-soft-anti-slip-polyester-bathroom-mat-quick-dry-machine-washable-super-absorbent-rug-for-bathroom-floor-blue-40x60-cm-product-images-orvldpcv1fm-p611311760-0-202504151820.jpg?im=Resize=(360,360)",
+            "name": "Clay Plus Soft Anti Slip Polyester Bathroom Mat Quick Dry, Machine Washable, Super Absorbent Rug for Bathroom Floor (Blue, 40x60 cm)",
+            "price": 98.00,
+            "original_price": 899.00,
+            "discount": "89% Off"
+        },
+        {
+            "id": 12,
+            "image": "https://www.jiomart.com/images/product/original/rvr9vcdqcx/urbanstar-zoom-14t-bmx-double-seat-2-5-year-kids-premium-quality-95-assembled-14-t-bmx-cycle-single-speed-black-green-rigid-product-images-orvr9vcdqcx-p611120960-0-202503061420.jpg?im=Resize=(360,360)",
+            "name": "URBANSTAR ZOOM | 14T BMX | DOUBLE SEAT | 2-5 Year Kids | Premium Quality | 95% Assembled | 14 T BMX Cycle (Single Speed, Black, Green, Rigid)",
+            "price": 1999.00,
+            "original_price": 9999.00,
+            "discount": "80% Off"
+        },
+        {
+            "id": 13,
+            "image": "https://www.jiomart.com/images/product/original/rvahlnldsg/quick-shel-purple-eva-yoga-mat-4-mm-product-images-orvahlnldsg-p600733441-0-202304201121.jpg?im=Resize=(360,360)",
+            "name": "Quick Shel Purple Eva Yoga Mat, 4 Mm",
+            "price": 199.00,
+            "original_price": 999.00,
+            "discount": "80% Off"
+        },
+        {
+            "id": 14,
+            "image": "https://www.jiomart.com/images/product/original/494338143/classela-blazia-black-mesh-mid-back-revolving-office-chair-with-height-adjustment-and-tilt-mechanism-work-from-home-chair-product-images-o494338143-p607347027-0-202408230833.jpg?im=Resize=(360,360)",
+            "name": "Classela Blazia Black Mesh Mid-Back Revolving Office Chair with Height Adjustment and Tilt Mechanism | Work From Home Chair | DIY",
+            "price": 2599.00,
+            "original_price": 8999.00,
+            "discount": "71% Off"
+        },
+        {
+            "id": 15,
+            "image": "https://www.jiomart.com/images/product/original/494421040/aulki-ambition-heavy-duty-study-chair-with-desklet-writing-pad-with-black-cushion-for-all-ages-product-images-o494421040-p609666498-0-202408081940.jpg?im=Resize=(360,360)",
+            "name": "Aulki Ambition Heavy Duty Study Chair with Desklet Writing Pad with Black Cushion (For All Ages)",
+            "price": 1499.00,
+            "original_price": 2500.00,
+            "discount": "40% Off"
+        },
+        {
+            "id": 16,
+            "image": "https://www.jiomart.com/images/product/original/rvnusqefk6/zexsazone-u-shape-traveling-neck-pillow-multipurpose-grey-neck-rest-neck-pillow-travel-pillow-head-rest-u-shape-pillow-soft-fabric-pillow-product-images-orvnusqefk6-p610913128-0-202501241051.jpg?im=Resize=(360,360)",
+            "name": "Zexsazone U-Shape Traveling Neck Pillow Multipurpose Grey| NECK REST| NECK PILLOW| TRAVEL PILLOW| HEAD REST| U-SHAPE PILLOW| SOFT-FABRIC PILLOW",
+            "price": 179.00,
+            "original_price": 699.00,
+            "discount": "74% Off"
+        },
+        {
+            "id": 17,
+            "image": "https://www.jiomart.com/images/product/original/rvvo9mnkcj/axen-bags-medium-25-l-laptop-backpack-daypack-small-bags-for-daily-use-library-office-outdoor-hiking-black-product-images-orvvo9mnkcj-p611173908-0-202503181725.jpg?im=Resize=(360,360)",
+            "name": "Axen Bags Medium 25 L Laptop Backpack | DAYPACK Small Bags for daily use | library office | outdoor| hiking-Black",
+            "price": 219.00,
+            "original_price": 1299.00,
+            "discount": "83% Off"
+        },
+        {
+            "id": 18,
+            "image": "https://www.jiomart.com/images/product/original/494575407/smartx-9w-led-bulb-cool-white-b22-pack-of-2-product-images-o494575407-p611272969-0-202504162257.jpg?im=Resize=(360,360)",
+            "name": "Smartx 9W Led Bulb Cool White B22 Pack Of 2",
+            "price": 79.00,
+            "original_price": 440.00,
+            "discount": "82% Off"
+        },
+        {
+            "id": 19,
+            "image": "https://www.jiomart.com/images/product/original/rved8ap5qu/aluminium-foil-20mtr-5mtr-free-kcofoil-food-grade-aluminium-foil-paper-product-images-orved8ap5qu-p597970766-0-202301302035.jpg?im=Resize=(360,360)",
+            "name": "KCOFOIL Aluminium Foil 20Mtr + 5Mtr Free | KCOFOIL Food Grade Aluminium Foil Paper",
+            "price": 179.00,
+            "original_price": 299.00,
+            "discount": "40% Off"
+        },
+        {
+            "id": 20,
+            "image": "https://www.jiomart.com/images/product/original/rvpkhwpaje/faverito-multipurpose-fridge-storage-organiser-fridge-storage-containers-1100-ml-product-images-orvpkhwpaje-p607969468-0-202402141417.jpg?im=Resize=(360,360)",
+            "name": "Faverito Multipurpose Fridge Storage Organiser, Fridge Storage Containers 1100 ml ( 6 pcs set )",
+            "price": 228.00,
+            "original_price": 1999.00,
+            "discount": "88% Off"
+        },
+        {
+            "id": 21,
+            "image": "https://www.jiomart.com/images/product/original/rvjisa0kua/blubel-stainless-steel-with-handle-1000-ml-cooking-oil-dispenser-oil-nozzle-dropper-container-dust-leak-proof-oil-bottle-pourer-with-handle-oil-pot-vinegar-dispenser-silver-pcs-of-1-product-images-orvjisa0kua-p610975392-0-202502041100.jpg?im=Resize=(360,360)",
+            "name": "BLUBEL Stainless Steel (with Handle) 1000 ml Cooking Oil Dispenser Oil Nozzle Dropper Container, Dust & Leak Proof Oil Bottle Pourer with Handle, Oil Pot, Vinegar Dispenser (Silver) (Pcs of 1)",
+            "price": 199.00,
+            "original_price": 899.00,
+            "discount": "77% Off"
+        },
+        {
+            "id": 22,
+            "image": "https://www.jiomart.com/images/product/original/494403425/paffy-silver-3-way-42-feet-length-cloth-stand-product-images-o494403425-p608719737-0-202404111907.jpg?im=Resize=(360,360)",
+            "name": "Paffy Premium Cloth Drying Stand, with 3 way Folding Technology, 42 Feet Drying Length,Total 20 Drying Rails (Silver)",
+            "price": 1099.00,
+            "original_price": 6999.00,
+            "discount": "84% Off"
+        },
+        {
+            "id": 23,
+            "image": "https://www.jiomart.com/images/product/original/rvqtdb34r7/power-mat-40x60-cm-antiskid-washable-for-kitchen-lobby-bedside-by-saral-home-brown-product-images-orvqtdb34r7-p598687089-0-202302230408.jpg?im=Resize=(360,360)",
+            "name": "POWER MAT 40x60 cm. Antiskid & Washable For Kitchen, Lobby, Bedside by Saral Home(Brown)",
+            "price": 299.00,
+            "original_price": 599.00,
+            "discount": "50% Off"
+        },
+        {
+            "id": 24,
+            "image": "https://www.jiomart.com/images/product/original/rvc1hlbehq/faverito-plastic-jug-with-lid-to-serve-ice-tea-juice-mocktail-beverages-for-dining-table-multicolor-1600-ml-product-images-orvc1hlbehq-p611218012-0-202503251841.jpg?im=Resize=(360,360)",
+            "name": "Faverito Plastic Jug with Lid to Serve Ice Tea, Juice, Mocktail, Beverages, for Dining Table (Multicolor-1600 ml)",
+            "price": 299.00,
+            "original_price": 999.00,
+            "discount": "70% Off"
+        },
+        {
+            "id": 25,
+            "image": "https://www.jiomart.com/images/product/original/rv10oacumb/sone-key-chidiya-spoon-stand-and-holder-for-kitchen-cutlery-holder-for-kitchen-ivory-product-images-orv10oacumb-p611269389-0-202504011858.jpg?im=Resize=(360,360)",
+            "name": "Sone key Chidiya Spoon Stand And Holder for Kitchen-Cutlery Holder for Kitchen,Ivory",
+            "price": 249.00,
+            "original_price": 999.00,
+            "discount": "75% Off"
+        },
+        {
+            "id": 26,
+            "image": "https://www.jiomart.com/images/product/original/rvxncn6h7j/rush-a4-size-200-pages-spiral-notebook-ruled-spiral-register-note-books-product-images-orvxncn6h7j-p603983060-0-202308192344.jpg?im=Resize=(360,360)",
+            "name": "Rush A4 Size 200 Pages Spiral Notebook Ruled - Spiral Register note books",
+            "price": 99.00,
+            "original_price": 150.00,
+            "discount": "34% Off"
+        },
+        {
+            "id": 27,
+            "image": "https://www.jiomart.com/images/product/original/rvzcnhidqs/aditi-toys-business-game-board-with-plastic-coins-5-fun-board-games-in-1-for-kids-adults-above-3-years-includes-business-ludo-snakes-ladders-cricket-and-treasure-island-bis-approved-product-images-orvzcnhidqs-p609445067-0-202406242255.png?im=Resize=(360,360)",
+            "name": "Aditi Toys Business Game Board with Plastic Coins, 5 Fun Board Games in 1 for Kids & Adults Above 3 Years Includes Business, Ludo, Snakes & Ladders, Cricket and Treasure Island, BIS Approved",
+            "price": 229.00,
+            "original_price": 699.00,
+            "discount": "67% Off"
+        },
+        {
+            "id": 28,
+            "image": "https://www.jiomart.com/images/product/original/494241240/toy-cloud-dart-gun-with-10-bullets-product-images-o494241240-p604873622-0-202310092051.jpg?im=Resize=(360,360)",
+            "name": "Toy Cloud Foam Blaster Dart Gun with 10 Bullets",
+            "price": 169.00,
+            "original_price": 539.00,
+            "discount": "68% Off"
+        },
+        {
+            "id": 29,
+            "image": "https://www.jiomart.com/images/product/original/rvhjjsnfys/vlite-food-wrapping-butter-paper-roll-medium-roll-280mm-x-40mtr-product-images-orvhjjsnfys-p605859657-0-202406130215.jpg?im=Resize=(360,360)",
+            "name": "VLITE Food Wrapping Butter Paper Roll- (Medium Roll, 280mm x 40mtr)",
+            "price": 119.00,
+            "original_price": 430.00,
+            "discount": "72% Off"
+        },
+        {
+            "id": 30,
+            "image": "https://www.jiomart.com/images/product/original/rvgcixfz3u/classic-top-load-washing-machine-cover-suitable-for-samsung-6-kg-6-2-kg-6-5-kg-7-kg-7-2-kg-7-5-56cms-x-56cms-x-85cms-black-flower-product-images-orvgcixfz3u-p598687328-0-202302230417.jpg?im=Resize=(360,360)",
+            "name": "Classic Top Load Washing Machine Cover Suitable for Samsung 6 kg, 6.2 kg, 6.5 kg, 7 kg, 7.2 kg, 7.5 | 56Cms X 56Cms X 85Cms | Black Flower",
+            "price": 499.00,
+            "original_price": 900.00,
+            "discount": "44% Off"
+        },
+        {
+            "id": 31,
+            "image": "https://www.jiomart.com/images/product/original/rve1x6y8rl/n-k-hangers-durable-kush-steel-hanger-pack-of-12-perfect-for-organizing-clothes-hanger-hanger-set-hangers-durable-hangers-steel-hanger-product-images-orve1x6y8rl-p610601528-0-202410251229.jpg?im=Resize=(360,360)",
+            "name": "N.K HANGERS Durable Kush Steel Hanger Pack of 12 - Perfect for Organizing Clothes | Hanger | Hanger Set | Hangers | Durable Hangers | Steel Hanger |",
+            "price": 182.00,
+            "original_price": 899.00,
+            "discount": "79% Off"
+        },
+        {
+            "id": 32,
+            "image": "https://www.jiomart.com/images/product/original/rvu1ahp7qb/supro-gas-saver-stand-burner-stand-gas-chula-burner-gas-stove-stand-jali-ring-fire-windproof-energy-saving-gas-chula-support-stand-4-legs-supported-for-indian-gas-0-7mm-pack-of-2-black-product-images-orvu1ahp7qb-p611284675-0-202504071207.jpg?im=Resize=(360,360)",
+            "name": "SUPRO Gas Saver stand Burner Stand Gas Chula Burner gas stove stand Jali Ring Fire & Windproof Energy Saving Gas Chula Support Stand 4 Legs Supported for Indian Gas 0.7mm (Pack of 2 Black)",
+            "price": 249.00,
+            "original_price": 799.00,
+            "discount": "68% Off"
+        },
+        {
+            "id": 33,
+            "image": "https://www.jiomart.com/images/product/original/494269934/navrang-purple-aluminium-granite-nonstick-cookware-set-2-pcs-product-images-o494269934-p605484569-0-202310100033.jpg?im=Resize=(360,360)",
+            "name": "Navrang Aluminium Granite premium Non-stick Cookware Set 2Pcs, Tawa 25cm,Fry pan 24cm, Soft touch handle, 2.5mm Thickness Purple",
+            "price": 583.00,
+            "original_price": 1999.00,
+            "discount": "70% Off"
+        },
+        {
+            "id": 34,
+            "image": "https://www.jiomart.com/images/product/original/494241216/classic-essentials-stainless-steel-cook-serving-handi-set-5pcs-with-5-serving-spoon-black-product-images-o494241216-p604741669-0-202403281732.jpg?im=Resize=(360,360)",
+            "name": "Classic Essentials Stainless Steel Cook & Serving Handi Set 5pcs with 5 Serving Spoon- Black",
+            "price": 455.00,
+            "original_price": 1299.00,
+            "discount": "64% Off"
+        },
+        {
+            "id": 35,
+            "image": "https://www.jiomart.com/images/product/original/494241013/vikas-hard-anodised-concave-tawa-27-5-cm-product-images-o494241013-p604741654-0-202309221626.jpg?im=Resize=(360,360)",
+            "name": "Vikas Hard Anodised Concave Tawa (27.5 cm)",
+            "price": 381.00,
+            "original_price": 1199.00,
+            "discount": "68% Off"
+        }
+    ],
+
+    "fashion":[
+      {
+        "image": "https://www.jiomart.com/images/product/original/rvyr7epidu/colorwings-green-famous-full-sleeve-cotton-blend-kurta-product-images-rvyr7epidu-0-202503121455.jpg?im=Resize=(330,410)",
+        "brand": "COLORWINGS",
+        "name": "Colorwings Green Famous Full Sleeve Cotton Blend Kurta",
+        "price": 279.00,
+        "original_price": 1499.00,
+        "discount": "81% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/rvvvbdszzq/smartraho-boys-festive-party-kurta-and-pyjama-set-with-jacket-product-images-rvvvbdszzq-0-202503260957.jpg?im=Resize=(330,410)",
+        "brand": "SmartRAHO",
+        "name": "SmartRAHO Boys Festive & Party Kurta and Pyjama Set With Jacket",
+        "price": 179.00,
+        "original_price": 1499.00,
+        "discount": "88% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/rvxo23go7i/ddg-women-anarkali-printed-kurti-product-images-rvxo23go7i-0-202503031113.jpg?im=Resize=(330,410)",
+        "brand": "DDG",
+        "name": "DDG Women Anarkali Printed Kurti",
+        "price": 289.00,
+        "original_price": 1499.00,
+        "discount": "80% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/443013360_ltpeach/woven-slim-fit-kurta-with-insert-pocket-model-443013360_ltpeach-0-202306250800.jpg?im=Resize=(330,410)",
+        "brand": "SAMAV",
+        "name": "Woven Slim Fit Kurta with Insert Pocket",
+        "price": 219.00,
+        "original_price": 999.00,
+        "discount": "78% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/443015592_green/printed-stole-with-tassels-model-443015592_green-0-202309161831.jpg?im=Resize=(330,410)",
+        "brand": "AVAASA MIX N' MATCH",
+        "name": "Printed Stole with Tassels",
+        "price": 199.00,
+        "original_price": 999.00,
+        "discount": "80% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/rvz9hp95ou/de-tees-boys-printed-tshirt-160gsm-product-images-rvz9hp95ou-0-202308040301.jpg?im=Resize=(330,410)",
+        "brand": "DE TEES",
+        "name": "DE TEES BOYS PRINTED TSHIRT 160GSM",
+        "price": 219.00,
+        "original_price": 399.00,
+        "discount": "45% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/rv41ytpjeg/lux-nitro-men-s-multicolor-solid-cotton-blend-pack-of-1-round-neck-t-shirt-licorice-product-images-rv41ytpjeg-0-202501221517.jpg?im=Resize=(330,410)",
+        "brand": "LUX NITRO",
+        "name": "LUX NITRO Men's Multicolor Solid Cotton Blend Pack of 1 Round Neck T-shirt-Licorice",
+        "price": 149.00,
+        "original_price": 210.00,
+        "discount": "29% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/443005448_peach/floral-print-straight-kurta-model-443005448_peach-0-202301170114.jpg?im=Resize=(330,410)",
+        "brand": "FUSION",
+        "name": "Floral Print Straight Kurta",
+        "price": 153.00,
+        "original_price": 699.00,
+        "discount": "78% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/rvtjsubcyr/new-gen-girls-blue-100-cotton-pack-of-1-jumpsuit-product-images-rvtjsubcyr-0-202207191513.jpg?im=Resize=(330,410)",
+        "brand": "NEW GEN",
+        "name": "NEW GEN GIRLS BLUE 100% COTTON PACK OF 1 JUMPSUIT",
+        "price": 175.00,
+        "original_price": 699.00,
+        "discount": "74% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/rvl6qmox3o/rudraaksha-stylish-dress-for-women-product-images-rvl6qmox3o-0-202210042102.jpg?im=Resize=(330,410)",
+        "brand": "Rudraaksha",
+        "name": "Rudraaksha Stylish Dress For women",
+        "price": 340.00,
+        "original_price": 1999.00,
+        "discount": "82% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/rvz00jtrsx/billyball-boy-s-and-girls-regular-fit-printed-cotton-half-sleeves-tshirt-and-shorts-avenger-pack-of-1-product-images-rvz00jtrsx-0-202503031257.jpg?im=Resize=(330,410)",
+        "brand": "Billyball",
+        "name": "Billyball Boy's and Girls Regular Fit Printed Cotton Half sleeves Tshirt and Shorts AVENGER(pack of 1)",
+        "price": 270.00,
+        "original_price": 1000.00,
+        "discount": "73% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/rvqffb6kjd/tb-trybuy-in-exclusive-stripes-cotton-half-sleeve-crochet-shirt-for-men-product-images-rvqffb6kjd-0-202504081006.jpg?im=Resize=(330,410)",
+        "brand": "TB TryBuy.in",
+        "name": "TB TryBuy.in Exclusive Stripes Cotton Half Sleeve Crochet Shirt for Men",
+        "price": 349.00,
+        "original_price": 3499.00,
+        "discount": "90% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/443007276_rust/polka-dot-print-fit-flare-dress-model-443007276_rust-0-202302010001.jpg?im=Resize=(330,410)",
+        "brand": "RIO",
+        "name": "Polka-Dot Print Fit & Flare Dress",
+        "price": 285.00,
+        "original_price": 1299.00,
+        "discount": "78% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/rvvysiigry/digimart-boys-multicolored-designer-cotton-pack-of-1-kurta-pyjama-set-product-images-rvvysiigry-0-202202220916.jpg?im=Resize=(330,410)",
+        "brand": "DIGIMART",
+        "name": "DIGIMART Boys Multicolored Designer Cotton Pack of 1 Kurta Pyjama Set",
+        "price": 229.00,
+        "original_price": 1199.00,
+        "discount": "80% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/443015860_pink/a-line-dress-with-waist-tie-up-model-443015860_pink-0-202309052100.jpg?im=Resize=(330,410)",
+        "brand": "FIG",
+        "name": "A-Line Dress with Waist Tie-Up",
+        "price": 230.00,
+        "original_price": 1049.00,
+        "discount": "78% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/443009156_coral/embellished-tulle-dress-model-443009156_coral-0-202303141952.jpg?im=Resize=(330,410)",
+        "brand": "KG FRENDZ",
+        "name": "Embellished Tulle Dress",
+        "price": 230.00,
+        "original_price": 1049.00,
+        "discount": "78% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/rvuqfwf31v/nermosa-women-kurta-and-pant-set-product-images-rvuqfwf31v-0-202503121915.jpg?im=Resize=(330,410)",
+        "brand": "Nermosa",
+        "name": "Nermosa Women Kurta And Pant Set",
+        "price": 549.00,
+        "original_price": 4999.00,
+        "discount": "89% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/rvqmhw6vf8/base-41-men-white-solid-cotton-blend-casual-shirts-product-images-rvqmhw6vf8-0-202209230309.jpg?im=Resize=(330,410)",
+        "brand": "BASE 41",
+        "name": "BASE 41 Men White Solid Cotton Blend Casual Shirts",
+        "price": 249.00,
+        "original_price": 1399.00,
+        "discount": "82% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/443022258_red/typographic-print-crew-neck-sweatshirt-model-443022258_red-0-202308141842.jpg?im=Resize=(330,410)",
+        "brand": "DNMX",
+        "name": "Typographic Print Crew-Neck Sweatshirt",
+        "price": 169.00,
+        "original_price": 499.00,
+        "discount": "66% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/rvxe7cufso/kuchipoo-disney-girls-cotton-frocks-dkuc-drs-107-multi-colored-pack-of-2-product-images-rvxe7cufso-0-202503191532.jpg?im=Resize=(330,410)",
+        "brand": "KUCHIPOO",
+        "name": "KUCHIPOO Disney Girls Cotton Frocks (DKUC-DRS-107, Multi-Colored) - Pack of 2",
+        "price": 367.00,
+        "original_price": 1899.00,
+        "discount": "80% Off"
+      },
+      {
+        "image": "https://www.jiomart.com/images/product/original/441137505_beige/heathered-cotton-henley-t-shirt-model-441137505_beige-0-202209121532.jpg?im=Resize=(330,410)",
+        "brand": "Teamspirit",
+        "name": "Regular Fit Core Micro Feeder Heathered Henley T-Shirt",
+        "price": 89.00,
+        "original_price": 299.00,
+        "discount": "70% Off"
+      }
+    ]
+    
+
+       
+    
+  }
+  

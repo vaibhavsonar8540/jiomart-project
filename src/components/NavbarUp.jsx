@@ -5,10 +5,13 @@ import { IoIosSearch } from "react-icons/io";
 import { RiListCheck } from "react-icons/ri";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoPersonCircleOutline } from "react-icons/io5";
+import NavbarDown from "./NavbarDown";
+
 
 const NavbarUp = () => {
   return (
   
+    <div>
     <div style={{ backgroundColor: "#0078AD", height: "90px" }}>
       <div
         style={{
@@ -38,36 +41,19 @@ const NavbarUp = () => {
           </div>
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
-          <div
-            style={{
-              display: "flex",
-              color: "white",
-              alignItems: "center",
-              backgroundColor: "#0C5273",
-              height: "40px",
-              width: "500px",
-              padding: "0px 30px",
-              borderRadius: "50px",
-            }}
-          >
-            <div>
-              <IoIosSearch style={{ color: "white" }} fontSize={"27px"} />
-            </div>
-            <input
-              type="text"
-              placeholder="Search Jiomart"
-              style={{
-                color: "white",
-                width: "450px",
-                backgroundColor: "#0C5273",
-                border: "transparent",
-                marginLeft: "10PX",
-              }}
-            />
-            <div style={{ marginLeft: "50px" }}>
-              <RiListCheck style={{ color: "white" }} fontSize={"27px"}/>
-            </div>
-          </div>
+        <div className="search-bar">
+      <div className="search-icon">
+        <IoIosSearch fontSize="27px" />
+      </div>
+      <input
+        type="text"
+        placeholder="Search Jiomart"
+        className="search-input"
+      />
+      <div className="list-icon">
+        <RiListCheck fontSize="27px" />
+      </div>
+    </div>
         </div>
         <div style={{display:"flex",alignItems:"center"}}>
           {" "}
@@ -85,6 +71,8 @@ const NavbarUp = () => {
           </Link>{" "}
         </div>
       </div>
+    </div>
+    <NavbarDown/>
     </div>
  
   );

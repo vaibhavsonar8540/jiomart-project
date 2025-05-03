@@ -4,8 +4,8 @@ import './NavDown.css';
 
 const Footer = () => {
   return (
-    <div style={{backgroundColor:"whitesmoke",height:"500px"}}>
-      <div style={{width:"80%",margin:"auto",display:"flex"}}>
+    <div style={{backgroundColor:"whitesmoke",height:"540px"}}>
+      <div style={{width:"80%",margin:"auto",display:"flex",height:"460px"}}>
         <div style={{ display: "flex", flexDirection: "column" ,paddingTop:"20px",width:"20%"}} >
             <h4>All Categories</h4>
             <Link to="#" style={{ textDecoration: "none" ,padding:"7px 0px",color:"#595959",fontFamily:"sans-serif"}} className="footer">Grocery</Link>
@@ -65,6 +65,18 @@ const Footer = () => {
                 <img src="https://www.jiomart.com/assets/ds2web/jds-icons/ios_app_icon.svg" alt=""  style={{marginLeft:"10px"}}/>
             </div>
         </div>
+      </div>
+
+    <hr style={{width:"100%",color:"gray"}}/>
+
+      <div  style={{display:"flex",justifyContent:"space-between",width:"80%",margin:"auto",height:"60px"}}>
+          <div style={{display:"flex"}}>
+            <img src="https://www.jiomart.com/assets/ds2web/jds-icons/jiomart-logo-icon.svg" alt="" style={{height:"40px"}}/>
+            <p style={{fontSize:"12px",marginLeft:"20px"}}>© 2025 All rights reserved. Reliance Retail Ltd.</p>
+          </div>
+          <div>
+            <p style={{fontSize:"12px"}}>Best viewed on Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+, Google Chrome 80+</p>
+          </div>
       </div>
     </div>
   );

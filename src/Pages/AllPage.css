@@ -1,0 +1,245 @@
+
+
+.slider-main{
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.slide-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.poster{
+  height: 200px;
+  border-radius: 20px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.poster img{
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.blockbuster-sec{
+  height: auto;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.blockbuster-sec img{
+  height: auto;
+  width: 100%;
+}   
+
+.subTrend {
+  width: 15%;
+  height: 220px;
+}
+
+.subTrend img
+{
+  height: 220px;
+  width: 100%;
+}
+
+/* top category */
+.topCategory
+{
+  width: 100%;
+  margin-top: 50px;
+}
+.SubTopCategory{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.SubTopCategory img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.categorySec{
+  width: 15.5%;
+
+}
+.categorySec img{
+  width: 100%;
+  height: auto;
+}
+
+.cricketSec{
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+.cricketSec img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* icecream sec */
+.icecreamMain
+{
+  width: 100%;
+  background-color: #DDF8FF;
+  padding: 5px 0px 30px 0px;
+  margin-top: 50px;
+}
+.icecreamSub{
+  width: 80%;
+  margin: auto;
+}
+
+.icecreamCard{
+  height: 327px;
+  background-color: white;
+  padding: 12px;
+  border-radius: 15px;
+}
+.ice-img{
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+.btnAdd{
+  width: 150px;
+  padding: 5px 0px;
+  font-size: 16px;
+  border-radius: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -50px;
+  color: #0C5273;
+  font-weight: 600;
+  border-color: gray;
+  background-color: white;
+}
+
+/* discount */
+.dis-main{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.dis-sub{
+  width: 32%;
+  border-radius: 20px;
+}
+.dis-sub img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.brandsLove{
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+}
+.brandsLove img{
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* brands */
+.brands-main{
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+}
+.brands-sub{
+  width: 15%;
+  margin-left: 20px;
+}
+.brands-sub img{
+  width: 100%;
+  height: auto;
+}
+
+/* electronics */
+.ele-img{
+  height: 130px;
+  width: 100px;
+  margin: auto;
+  display: flex;
+}
+.EleCard{
+  height: 290px;
+  background-color: white;
+  padding: 12px;
+  border-radius: 15px;
+}
+
+.btnfvt{
+  border-radius: 50%;
+  background-color: white;
+  border-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px ;
+  position: relative;
+  left: 130px;
+}
+
+/* home */
+.homeP-img{
+  height: 150px;
+  width: 100%;
+}
+
+/* globalstore */
+.globalSTore{
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.globalSTore img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* shopping */
+.shopping{
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+.shopping img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.jioCare{
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.jioCare img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
