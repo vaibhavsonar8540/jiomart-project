@@ -7,6 +7,10 @@ import "swiper/css/navigation";
 import "./AllPage.css";
 import axios from "axios";
 import { CiHeart } from "react-icons/ci";
+import NavbarUp from "./NavbarUp";
+import Footer from "./Footer";
+import AllRoutes from "../AllRoutes";
+
 
 
 const images = [
@@ -115,7 +119,11 @@ const Home = () => {
 
 
   return (
+
+    <div>
+    <NavbarUp/>
     <div style={{ margin: "auto" }}>
+      
       <div className="slider-main">
         {/* slider */}
         <Swiper
@@ -331,6 +339,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
+
 
       {/* icecream section */}
 
@@ -699,6 +708,9 @@ const Home = () => {
         <div className="jioCare">
          <Link> <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1740738581_2368x400_JioMartCares_2.jpg?im=Resize=(2368,400)" alt="" /></Link>
         </div>
+
+    </div>
+    <Footer/>
     </div>
   );
 };

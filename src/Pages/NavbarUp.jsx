@@ -73,6 +73,7 @@ const NavbarUp = () => {
       </div>
     </div>
     <NavbarDown/>
+    
     </div>
  
   );

@@ -1,8 +1,10 @@
 import React from 'react';
 import './NavDown.css';
+import PrivatePage from './PrivatePage';
 
 const Description = () => {
   return (
+    <PrivatePage>
     <div className="product-page">
       <div className="product-container">
         {/* Left Section - Image */}
@@ -45,6 +47,7 @@ const Description = () => {
         </div>
       </div>
     </div>
+    </PrivatePage>
   );
 };
 
