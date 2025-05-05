@@ -1,53 +1,74 @@
-import React from 'react';
-import './NavDown.css';
-import PrivatePage from './PrivatePage';
+import React, { useEffect, useState } from 'react';
+import './AllPage.css';
+import { useParams } from 'react-router-dom';
+import NavbarUp from '../Components/NavbarUp';
+
 
 const Description = () => {
+  const { category, id } = useParams();
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      setLoading(true);
+      setError(null);
+
+      try {
+        // Fetch from the specified category
+        const response = await fetch(`http://localhost:3000/${category}/${id}`);
+        if (response.ok) {
+          const data = await response.json();
+          setProduct(data);
+          setLoading(false);
+        } else {
+          setError('Product not found');
+          setLoading(false);
+        }
+      } catch (err) {
+        console.error("Failed to fetch product detail", err);
+        setError('Failed to fetch product details');
+        setLoading(false);
+      }
+    };
+
+    fetchProduct();
+  }, [category, id]);
+
+  if (loading) return <div className="p-4">Loading...</div>;
+  if (error) return <div className="p-4">{error}</div>;
+  if (!product) return <div className="p-4">No product found</div>;
+
   return (
-    <PrivatePage>
+    <div>
+    <NavbarUp/>
     <div className="product-page">
       <div className="product-container">
         {/* Left Section - Image */}
         <div className="product-image-section">
           <img
-            src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSiuLDq0AwpJyv752FU1bgpIGnoxLr3D6UpRuxfZ2ddvZ5ZaAn2kBfpDxJsPRaCprt6ARqNrjyI4mo8OYcW6TenLomC77sm1O6YElp63W4"
-            alt="Product"
+            src={product.image}
+            alt={product.title || product.name}
             className="product-image"
           />
         </div>
 
         {/* Right Section - Details */}
         <div className="product-details-section">
-          <h1 className="product-title">DDG Women Anarkali Printed Kurti</h1>
-          <p className="product-brand">Brand: DIVYA DEEP GARMENTS</p>
+          <h1 className="product-title">{product.title || product.name}</h1>
+          {product.brand && <p className="product-brand">{product.brand}</p>}
           <p className="product-price">
-            ₹289.00 <span className="original-price">₹1,499.00</span>
-            <span className="discount"> (81% OFF)</span>
+            ₹{product.price} <span className="original-price">₹{product.originalPrice || product.original_price}</span>
+            <span className="discount"> ({product.discount})</span>
           </p>
-
-          <p className="product-description">
-            This Anarkali Kurti features premium cotton blend fabric with elegant
-            floral prints. Perfect for festive and casual occasions.
-          </p>
-
-          <div className="product-options">
-            <p>Color: <span className="selected-option">Blue</span></p>
-            <p>Size:
-              <span className="size-option">S</span>
-              <span className="size-option selected">M</span>
-              <span className="size-option">L</span>
-              <span className="size-option">XL</span>
-            </p>
-          </div>
-
+          
           <button className="add-to-cart-btn">Add to Cart</button>
           <button className="buy-now-btn">Buy Now</button>
-
-          <p className="delivery-info">Delivery by 9th May | Free Shipping</p>
         </div>
       </div>
     </div>
-    </PrivatePage>
+    </div>
   );
 };
 

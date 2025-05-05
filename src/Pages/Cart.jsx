@@ -1,78 +1,137 @@
-import React, { useState } from 'react';
-import "./AllPage.css";
+import React, { useState, useEffect } from 'react';
+import './AllPage.css';
+import axios from 'axios';
+import NavbarUp from '../Components/NavbarUp';
 
 const Cart = () => {
-  const [quantity, setQuantity] = useState(1);
+  const [data, setData] = useState([]);
+  const [quantities, setQuantities] = useState({});
 
-  const increaseQuantity = () => {
-    setQuantity(prev => prev + 1);
+  useEffect(() => {
+    axios.get("http://localhost:3000/cart")
+      .then(res => {
+        setData(res.data);
+
+        const initialQuantities = {};
+        res.data.forEach(item => {
+          initialQuantities[item.id] = item.quantity || 1;
+        });
+        setQuantities(initialQuantities);
+      })
+      .catch(err => console.error(err));
+  }, []);
+
+  const handleIncrease = (id) => {
+    setQuantities(prev => ({
+      ...prev,
+      [id]: prev[id] + 1
+    }));
   };
 
-  const decreaseQuantity = () => {
-    if (quantity > 1) {
-      setQuantity(prev => prev - 1);
+  const handleDecrease = (id) => {
+    if (quantities[id] > 1) {
+      setQuantities(prev => ({
+        ...prev,
+        [id]: prev[id] - 1
+      }));
     }
   };
 
-  const originalPrice = 1499;
-  const discountedPrice = 289;
-  const total = discountedPrice * quantity;
-  const savings = (originalPrice - discountedPrice) * quantity;
+  const handleDelete = (id) => {
+    axios.delete(`http://localhost:3000/cart/${id}`)
+      .then(() => {
+        setData(prev => prev.filter(item => item.id !== id));
+        setQuantities(prev => {
+          const updated = { ...prev };
+          delete updated[id];
+          return updated;
+        });
+      })
+      .catch(err => console.error("Error deleting item:", err));
+  };
+  
+
+  const calculateTotal = () => {
+    return data.reduce((acc, item) => {
+      const qty = quantities[item.id] || 1;
+      return acc + item.price * qty;
+    }, 0);
+  };
+
+  const calculateSavings = () => {
+    return data.reduce((acc, item) => {
+      const qty = quantities[item.id] || 1;
+      return acc + (item.originalPrice - item.price) * qty;
+    }, 0);
+  };
 
   return (
+<div>
+    <NavbarUp/>
     <div className="cart-container">
+    
       <h2 className="cart-title">My Cart</h2>
-
       <div className="cart-content" style={{ display: 'flex', gap: '20px' }}>
+        
         <div className="cart-items" style={{ width: '65%' }}>
-          <h3 className="basket-title">Scheduled Basket ({quantity})</h3>
-          <div className="item-card">
-            <img src="/path-to-image.jpg" alt="Kurti" className="item-image" />
-            <div className="item-details">
-              <p className="item-name">DDG Women Anarkali Printed Kurti</p>
-              <div className="price-section">
-                <span className="current-price">₹{discountedPrice.toFixed(2)}</span>
-                <span className="original-price">₹{originalPrice.toFixed(2)}</span>
+          <h3 className="basket-title">Scheduled Basket ({data.length} items)</h3>
+          {data.length === 0 ? (
+            <p className="empty-cart-message">Your cart is empty.</p>
+          ) : (
+            data.map(item => (
+              <div key={item.id} className="item-card">
+                <img src={item.image} alt={item.title} className="item-image" />
+                <div className="item-details">
+                  <p className="item-name">{item.title}</p>
+                  <div className="price-section">
+                    <span className="current-price">₹{item.price}</span>
+                    <span className="original-price">₹{item.original_price}</span>
+                  </div>
+                  <p className="discount">
+                    You Save ₹{(item.original_price - item.price)}
+                  </p>
+                </div>
+                <div className="quantity-control">
+                  <button className="quantity-btn" onClick={() => handleDecrease(item.id)}>-</button>
+                  <span>{quantities[item.id]}</span>
+                  <button className="quantity-btn" onClick={() => handleIncrease(item.id)}>+</button>
+                </div>
+                <button className="delete-btn" onClick={() => handleDelete(item.id)}>Delete</button>
               </div>
-              <p className="discount">You Save ₹{(originalPrice - discountedPrice).toFixed(2)}</p>
-              <p className="seller">Sold by: <strong>DIVYA DEEP GARMENTS</strong></p>
-              <p className="color">Colour: <span>Blue</span></p>
-              <p className="size">Size: <span>M</span></p>
-              <p className="delivery">Delivery by 9th May</p>
-            </div>
-            <div className="quantity-control">
-              <button className="quantity-btn" onClick={decreaseQuantity}>-</button>
-              <span>{quantity}</span>
-              <button className="quantity-btn" onClick={increaseQuantity}>+</button>
-            </div>
-          </div>
+              
+            ))
+            
+          )}
+          
         </div>
 
-        <div className="cart-summary" style={{ width: '35%' }}>
-          <div className="payment-details">
-            <h3>Payment Details</h3>
-            <div className="payment-row">
-              <span>MRP Total</span>
-              <span>₹{(originalPrice * quantity).toFixed(2)}</span>
+        {data.length > 0 && (
+          <div className="cart-summary" style={{ width: '35%' }}>
+            <div className="payment-details">
+              <h3>Payment Details</h3>
+              <div className="payment-row">
+                <span>MRP Total</span>
+                <span>₹{calculateTotal()}</span>
+              </div>
+              <div className="payment-row">
+                <span>Product Discount</span>
+                <span className="discount">- ₹{calculateSavings()}</span>
+              </div>
+              <div className="payment-row">
+                <span>Delivery Fee</span>
+                <span className="free">FREE</span>
+              </div>
+              <div className="total-row">
+                <span>Total</span>
+                <span>₹{calculateTotal()}</span>
+              </div>
+              <p className="total-saved">You Saved ₹{calculateSavings()}</p>
             </div>
-            <div className="payment-row">
-              <span>Product Discount</span>
-              <span className="discount">- ₹{savings.toFixed(2)}</span>
-            </div>
-            <div className="payment-row">
-              <span>Delivery Fee (Scheduled)</span>
-              <span className="free">FREE</span>
-            </div>
-            <div className="total-row">
-              <span>Total</span>
-              <span>₹{total.toFixed(2)}</span>
-            </div>
-            <p className="total-saved">You Saved ₹{savings.toFixed(2)}</p>
+            <button className="place-order">Place Order</button>
           </div>
-
-          <button className="place-order">Place Order</button>
-        </div>
+        )}
       </div>
+    </div>
     </div>
   );
 };

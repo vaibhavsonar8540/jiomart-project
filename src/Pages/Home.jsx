@@ -7,9 +7,10 @@ import "swiper/css/navigation";
 import "./AllPage.css";
 import axios from "axios";
 import { CiHeart } from "react-icons/ci";
-import NavbarUp from "./NavbarUp";
-import Footer from "./Footer";
-import AllRoutes from "../AllRoutes";
+import NavbarUp from "../Components/NavbarUp";
+import FooterMain from "../Components/Footer";
+
+
 
 
 
@@ -366,7 +367,7 @@ const Home = () => {
             {products.map((el, index) => (
               <SwiperSlide key={index}>
                 <div className="icecreamCard">
-                  <Link to={el.link}>
+                  <Link to={`/product/icecream/${el.id}`}>
                     <img src={el.image} alt={el.title} className="ice-img" />
                   </Link>
                   <h5>{el.title}</h5>
@@ -514,10 +515,10 @@ const Home = () => {
               <SwiperSlide key={index}>
                 <div className="EleCard">
                   <button className="btnfvt"><CiHeart style={{fontSize:"20px"}} className="btnFavt"/></button>
-                  <Link to={el.link}>
+                  <Link to={`/product/electronics/${el.id}`}>
                     <img src={el.image} alt={el.title} className="ele-img"  />
                   </Link>
-                  <h5>{el.name}</h5>
+                  <h5>{el.title}</h5>
                   <h4 style={{ position: "relative", top: "-10px" }}>
                     {el.price}
                   </h4>
@@ -536,7 +537,7 @@ const Home = () => {
                         margin: 0,
                       }}
                     >
-                      {el.original_price}
+                      {el.originalPrice}
                     </h4>
                     <h5
                       style={{
@@ -582,7 +583,7 @@ const Home = () => {
               <SwiperSlide key={index}>
                 <div className="icecreamCard">
                 <button className="btnfvt"><CiHeart style={{fontSize:"20px"}} className="btnFavt"/></button>
-                  <Link to={el.link}>
+                  <Link to={`/product/home/${el.id}`}>
                     <img src={el.image} alt={el.title} className="homeP-img" />
                   </Link>
                   {/* <h5>{el.name}</h5> */}
@@ -652,7 +653,7 @@ const Home = () => {
               <SwiperSlide key={index}>
                 <div className="icecreamCard">
                 <button className="btnfvt"><CiHeart style={{fontSize:"20px"}} className="btnFavt"/></button>
-                  <Link to={el.link}>
+                  <Link to={`/product/fashion/${el.id}`}>
                     <img src={el.image} alt={el.title} className="homeP-img" />
                   </Link>
                   {/* <h5>{el.name}</h5> */}
@@ -710,7 +711,7 @@ const Home = () => {
         </div>
 
     </div>
-    <Footer/>
+    <FooterMain/>
     </div>
   );
 };

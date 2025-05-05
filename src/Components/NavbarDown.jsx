@@ -11,10 +11,10 @@ const NavbarDown = () => {
           <Link to="/grocery" className="ul-link">Groceries</Link>
           <ul className="navbar-submenu">
             <li className="submenu-item">
-              <Link className="sub-link">Biscuits, Drinks & Packaged Foods</Link>
+              <Link className="sub-link" to={'/drink'}>Biscuits, Drinks & Packaged Foods</Link>
               <ul className="navbar-subsubmenu1">
-                <li><Link className="link-sub">Ice Cream & Frozen</Link></li>
-                <li><Link className="link-sub">Chips & Namkeens</Link></li>
+                <li><Link className="link-sub" to={'/icefrozen'}>Ice Cream & Frozen</Link></li>
+                <li><Link className="link-sub" >Chips & Namkeens</Link></li>
                 <li><Link className="link-sub">Biscuits & Cookies</Link></li>
                 <li><Link className="link-sub">Chocolates & Candies</Link></li>
                 <li><Link className="link-sub">Indian Sweets</Link></li>
@@ -27,7 +27,7 @@ const NavbarDown = () => {
                 <li><Link className="link-sub">Tea & Coffee</Link></li>
               </ul>
             </li>
-            <li className="submenu-item"><Link className="sub-link">Fruits & Vegetables</Link>
+            <li className="submenu-item"><Link className="sub-link" to={'/fruitVege'}>Fruits & Vegetables</Link>
             <ul className="navbar-subsubmenu2">
                 <li><Link className="link-sub">Fresh Fruits</Link></li>
                 <li><Link className="link-sub">Basic Vegetable</Link></li>
@@ -51,7 +51,7 @@ const NavbarDown = () => {
           </ul>
         </li>
         <li className="navbar-item">
-          <Link to="/home" className="ul-link">Home & Lifestyle</Link>
+          <Link to="/life" className="ul-link">Home & Lifestyle</Link>
             <ul className="navbar-submenu">
               <li className="submenu-item"><Link className="sub-link">Kitchenware</Link></li>
               <li className="submenu-item"><Link className="sub-link">Home Furnishing</Link></li>

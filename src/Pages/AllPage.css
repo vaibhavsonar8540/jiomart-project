@@ -573,3 +573,142 @@
 .signup-container button:hover {
   background-color: #0056b3;
 }
+
+
+
+/* ### Description Page## */
+
+/* description page */
+.product-page {
+  width: 50%;
+  margin: auto;
+  padding: 40px 0;
+  font-family: sans-serif;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 60px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-image-section {
+  flex: 1;
+  width: 300px;
+}
+
+.product-image {
+  width: 300px;
+  border-radius: 12px;
+  margin: auto;
+  height: 300px;
+}
+
+.product-details-section {
+  flex: 1;
+  width: 400px;
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.product-brand {
+  color: gray;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 10px;
+}
+
+.discount {
+  color: green;
+  font-weight: 600;
+  margin-left: 10px;
+  width: 100px;
+}
+
+.product-description {
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.product-options {
+  margin: 15px 0;
+}
+
+.size-option {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.selected {
+  border-color: #0077a6;
+  background-color: #e6f7ff;
+}
+
+.add-to-cart-btn, .buy-now-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+.add-to-cart-btn {
+  background-color: #fff;
+  color: #0077a6;
+  border: 2px solid #0077a6;
+}
+
+.buy-now-btn {
+  background-color: #0077a6;
+  color: white;
+}
+
+.delivery-info {
+  margin-top: 20px;
+  color: #28a745;
+  font-weight: 500;
+}
+
+  /* cart */
+  .delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+    position: relative;
+    top: 45px;
+  }
+  
+  .empty-cart-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    margin-top: 20px;
+  }
+  

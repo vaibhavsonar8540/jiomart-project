@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './NavDown.css'; 
 
-const Footer = () => {
+const FooterMain = () => {
   return (
     <div style={{backgroundColor:"whitesmoke",height:"540px"}}>
       <div style={{width:"80%",margin:"auto",display:"flex",height:"460px"}}>
@@ -82,4 +82,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterMain;

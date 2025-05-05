@@ -9,7 +9,7 @@ const PrivatePage = ({ children }) => {
 
   if (loading) return <p>Loading...</p>;
 
-  return user ? children : <Navigate to="/login" />;
+  return user ? children : <Navigate to="/signin" />;
 };
 
 export default PrivatePage;

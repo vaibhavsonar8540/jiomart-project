@@ -1,14 +1,33 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosSearch } from "react-icons/io";
 import { RiListCheck } from "react-icons/ri";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoPersonCircleOutline } from "react-icons/io5";
-import NavbarDown from "./NavbarDown";
+import NavbarDown from "../Components/NavbarDown";
 
 
 const NavbarUp = () => {
+
+// Inside NavbarUp component
+const [searchTerm, setSearchTerm] = useState("");
+const navigate = useNavigate();
+const [searchParams] = useSearchParams();
+
+const handleSearch = (e) => {
+  if (e.key === "Enter") {
+    const params = new URLSearchParams(searchParams);
+    if (searchTerm.trim()) {
+      params.set("q", searchTerm);
+    } else {
+      params.delete("q");
+    }
+    navigate({ search: params.toString() });
+  }
+};
+
+
   return (
   
     <div>
@@ -41,6 +60,8 @@ const NavbarUp = () => {
           </div>
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
+
+          {/* search */}
         <div className="search-bar">
       <div className="search-icon">
         <IoIosSearch fontSize="27px" />
@@ -49,7 +70,11 @@ const NavbarUp = () => {
         type="text"
         placeholder="Search Jiomart"
         className="search-input"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        onKeyDown={handleSearch}
       />
+
       <div className="list-icon">
         <RiListCheck fontSize="27px" />
       </div>
