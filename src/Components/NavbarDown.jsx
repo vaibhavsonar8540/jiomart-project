@@ -53,16 +53,18 @@ const NavbarDown = () => {
         <li className="navbar-item">
           <Link to="/life" className="ul-link">Home & Lifestyle</Link>
             <ul className="navbar-submenu">
-              <li className="submenu-item"><Link className="sub-link">Kitchenware</Link></li>
-              <li className="submenu-item"><Link className="sub-link">Home Furnishing</Link></li>
-              <li className="submenu-item"><Link className="sub-link">Sports & Fitness</Link></li>
-              <li className="submenu-item"><Link className="sub-link">Bags & Travel Luggage</Link></li>
-              <li className="submenu-item"><Link className="sub-link">Bathroom & Laundry Accessories</Link></li>
-              <li className="submenu-item"><Link className="sub-link">Home Decor</Link></li>
-              <li className="submenu-item"><Link className="sub-link">Disposable</Link></li>
-              <li className="submenu-item"><Link className="sub-link">Prayer & Spiritual Needs</Link></li>
-              <li className="submenu-item"><Link className="sub-link">Tableware</Link></li>
-              <li className="submenu-item"><Link className="sub-link">Furniture</Link></li>
+              <li className="submenu-item"><Link className="sub-link" to="/life">Kitchenware</Link></li>
+              <li className="submenu-item"><Link className="sub-link" to="/life">Home Furnishing</Link></li>
+              <li className="submenu-item"><Link className="sub-link" to="/life">Sports & Fitness</Link></li>
+              <li className="submenu-item"><Link className="sub-link" to="/life">Bags & Travel Luggage</Link></li>
+              <li className="submenu-item"><Link className="sub-link" to="/life">Bathroom & Laundry Accessories</Link></li>
+              <li className="submenu-item"><Link className="sub-link" to="/life">Home Decor</Link></li>
+              <li className="submenu-item"><Link className="sub-link" to="/life">Disposable</Link></li>
+              <li className="submenu-item"><Link className="sub-link" to="/life">  Prayer & Spiritual Needs</Link></li>
+              <li className="submenu-item"><Link className="sub-link" to="/life">Tableware</Link></li>
+              <li className="submenu-item"><Link className="sub-link" to="/life">Furniture</Link></li>
+              <li className="submenu-item"><Link className="sub-link" to="/life">Toys and Games</Link></li>
+              <li className="submenu-item"><Link className="sub-link" to="/life">Garden and Outdoor</Link></li>
             </ul>
         </li>
         <li className="navbar-item">

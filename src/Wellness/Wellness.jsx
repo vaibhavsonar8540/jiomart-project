@@ -1,12 +1,13 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import './Life.css';
+import './Wellness.css';
 import { CiHeart } from "react-icons/ci";
 import { Link, useSearchParams } from 'react-router-dom';
 import NavbarUp from '../Components/NavbarUp';
-import LifeSidebar from './LifeSIdebar'; // Corrected import casing
+import WellnessSidebar from './WellnessSidebar';
 
-const LifeStyle = () => {
+
+const Wellness = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -21,7 +22,7 @@ const LifeStyle = () => {
   };
 
   useEffect(() => {
-    axios.get("http://localhost:3000/lifestyle", { params: paramObj }) // Removed extra space
+    axios.get("http://localhost:3000/wellness", { params: paramObj }) // Removed extra space
       .then((res) => {
         setData(res.data);
         setLoading(false);
@@ -75,7 +76,7 @@ const LifeStyle = () => {
 
       <div style={{ display: 'flex', width: '80%', margin: 'auto', marginTop: '20px' }}>
         <div style={{ width: '20%', paddingRight: '20px', marginTop: "20px" }}>
-          <LifeSidebar />
+          <WellnessSidebar />
         </div>
 
         <div style={{ width: '80%' }}>
@@ -108,4 +109,4 @@ const LifeStyle = () => {
   );
 };
 
-export default LifeStyle;
+export default Wellness;

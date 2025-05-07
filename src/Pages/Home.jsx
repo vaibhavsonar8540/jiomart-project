@@ -657,7 +657,7 @@ const Home = () => {
                     <img src={el.image} alt={el.title} className="homeP-img" />
                   </Link>
                   {/* <h5>{el.name}</h5> */}
-                  {el.name.length > 30 ? `${el.name.slice(0, 30)}...` : el.name}
+                  {el.name?.length> 30 ? `${el.name.slice(0, 30)}...` : el.name}
                   <h4 style={{ position: "relative", top: "-10px" }}>
                     ₹{el.price}
                   </h4>

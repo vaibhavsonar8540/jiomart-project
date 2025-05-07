@@ -11,6 +11,11 @@ import IceFrozen from './Grocery/IceFrozen'
 import FruitVegies from './Grocery/FruitVegies'
 import GroceryData from './Grocery/GroceryData'
 import Lifestyle from './HomeLife/Lifestyle'
+import Electronics from './Electronics/electronics'
+import Fashion from './Fashion/Fashion'
+import Industry from './Industry/Industry'
+import Jewellery from './Jewellery/Jewellery'
+import Wellness from './Wellness/Wellness'
 
 
 const AllRoutes = () => {
@@ -27,6 +32,11 @@ const AllRoutes = () => {
             <Route path='/icefrozen' element={<IceFrozen/>}/>
             <Route path='/fruitVege' element={<FruitVegies/>}/>
             <Route path='/life' element={<Lifestyle/>}/>
+            <Route path='/electronics' element={<Electronics/>}/>
+            <Route path='/fashion' element={<Fashion/>}/>
+            <Route path='/industrial-supplies' element={<Industry/>}/>
+            <Route path='/precious-jewellery' element={<Jewellery/>}/>
+            <Route path='/wellness' element={<Wellness/>}/>
         </Routes>
     </div>
   )
