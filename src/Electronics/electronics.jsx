@@ -5,6 +5,7 @@ import { CiHeart } from "react-icons/ci";
 import { Link, useSearchParams } from 'react-router-dom';
 import NavbarUp from '../Components/NavbarUp';
 import EleSidebar from './EleSidebar';
+import PrivatePage from '../Components/PrivatePage';
 
 const Electronics = () => {
   const [data, setData] = useState([]);
@@ -21,13 +22,13 @@ const Electronics = () => {
   };
 
   useEffect(() => {
-    axios.get("http://localhost:3000/electronics", { params: paramObj }) // Removed extra space
+    axios.get("http://localhost:3000/electronics", { params: paramObj })
       .then((res) => {
         setData(res.data);
         setLoading(false);
       })
       .catch((err) => {
-        console.error("Failed to fetch lifestyle items:", err);
+        console.error("Failed to fetch electronics items:", err);
         setError("Failed to load items. Please try again later.");
         setLoading(false);
       });
@@ -54,18 +55,30 @@ const Electronics = () => {
     }
   };
 
+  const handleFav = async (item) => {
+    try {
+      const res = await axios.get(`http://localhost:3000/favourite?id=${item.id}`);
+      if (res.data.length === 0) {
+        await axios.post("http://localhost:3000/favourite", item);
+        alert("Item added to Favourite!");
+      } else {
+        alert("Item already in Favourite!");
+      }
+    } catch (err) {
+      console.error("Failed to add item to Favourite:", err);
+      alert("Failed to add to Favourite. Try again.");
+    }
+  };
+
   return (
     <div>
       <NavbarUp />
-      <div style={{ marginTop: "20px", position: "relative", left: "1150px" }}>
+      <div className="sort-container">
         <select
           onChange={(e) => {
             const value = e.target.value;
-            if (value === "asc") setOrder("asc"); // Low to High
-            else if (value === "desc") setOrder("desc"); // High to Low
-            else setOrder(null);
+            setOrder(value || null);
           }}
-          style={{ padding: "5px 10px", borderRadius: '5px' }}
         >
           <option value="">Select sort option</option>
           <option value="asc">Low to High</option>
@@ -73,35 +86,35 @@ const Electronics = () => {
         </select>
       </div>
 
-      <div style={{ display: 'flex', width: '80%', margin: 'auto', marginTop: '20px' }}>
-        <div style={{ width: '20%', paddingRight: '20px', marginTop: "20px" }}>
+      <div className="main-layout">
+        <div className="sidebar-area">
           <EleSidebar />
         </div>
 
-        <div style={{ width: '80%' }}>
-          <div className="product-grid">
-            {data.map((el) => (
-              <div className="product-card" key={el.id}>
-                <span className="smart-bazaar-badge">SMART BAZAAR</span>
-                <span className="favorite-icon"><CiHeart /></span>
-                <Link to={`/product/lifestyle/${el.id}`}>
-                  <img src={el.image} alt={el.title} className="product-image" />
-                </Link>
-                <div className="product-title">{el.title}</div>
-                <div className="price-section">
-                  <span className="current-price">₹{el.price}</span>
-                  {el.original_price && (
-                    <span className="original-price">₹{el.original_price}</span>
-                  )}
-                  {el.discount && (
-                    <span className="discount">{el.discount}</span>
-                  )}
-                </div>
-                <div className="quantity">{el.quantity || 'N/A'}</div>
-                <button className="add-button" onClick={() => handleAddToCart(el)}>Add</button>
+        <div className="product-grid">
+          {data.map((el) => (
+            <div className="product-card" key={el.id}>
+              <span className="smart-bazaar-badge">SMART BAZAAR</span>
+              <span className="favorite-icon">
+               <CiHeart onClick={() => handleFav(el)} />
+              </span>
+              <Link to={`/product/electronics/${el.id}`}>
+                <img src={el.image} alt={el.title} className="product-image" />
+              </Link>
+              <div className="product-title">{el.title.slice(0,50)}...</div>
+              <div className="price-section">
+                <span className="current-price">₹{el.price}</span>
+                {el.original_price && (
+                  <span className="original-price">₹{el.original_price}</span>
+                )}
+                {el.discount && (
+                  <span className="discount">{el.discount}</span>
+                )}
               </div>
-            ))}
-          </div>
+              <div className="quantity">{el.quantity || 'N/A'}</div>
+              <button className="add-button" onClick={() => handleAddToCart(el)}>Add</button>
+            </div>
+          ))}
         </div>
       </div>
     </div>

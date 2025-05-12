@@ -9,6 +9,7 @@ import axios from "axios";
 import { CiHeart } from "react-icons/ci";
 import NavbarUp from "../Components/NavbarUp";
 import FooterMain from "../Components/Footer";
+import PrivatePage from "../Components/PrivatePage";
 
 
 
@@ -17,31 +18,31 @@ import FooterMain from "../Components/Footer";
 const images = [
   {
     src: "https://www.jiomart.com/images/cms/aw_rbslider/slides/1744469612_grocery_super_saver.jpg?im=Resize=(768,448)",
-    link: "/grocery",
+    link: "/grocery?category=care",
   },
   {
     src: "https://www.jiomart.com/images/cms/aw_rbslider/slides/1745692182_1.jpg?im=Resize=(768,448)",
-    link: "/mobiles",
+    link: "/electronics?category=mobile",
   },
   {
     src: "https://www.jiomart.com/images/cms/aw_rbslider/slides/1745767036_22.jpg?im=Resize=(768,448)",
-    link: "/tv-deals",
+    link: "/electronics?category=computer",
   },
   {
     src: "https://www.jiomart.com/images/cms/aw_rbslider/slides/1745767177_HPMC_1.jpg?im=Resize=(768,448)",
-    link: "/product/hpmc1",
+    link: "/life?category=kitchenware",
   },
   {
     src: "https://www.jiomart.com/images/cms/aw_rbslider/slides/1745692252_HPMC_2.jpg?im=Resize=(768,448)",
-    link: "/product/hpmc2",
+    link: "/fashion?category=crafts",
   },
   {
     src: "https://www.jiomart.com/images/cms/aw_rbslider/slides/1745767225_HPMC_3.jpg?im=Resize=(768,448)",
-    link: "/product/hpmc3",
+    link: "/life?category=home+furnishing",
   },
   {
     src: "https://www.jiomart.com/images/cms/aw_rbslider/slides/1745692448_HPMC_4.jpg?im=Resize=(768,448)",
-    link: "/product/hpmc4",
+    link: "/product/supplies/74",
   },
 ];
 
@@ -118,6 +119,41 @@ const Home = () => {
   }, []);
 
 
+  //favourite
+  const handleFav = async (item) => {
+    try {
+      const res = await axios.get(`http://localhost:3000/favourite?id=${item.id}`);
+      if (res.data.length === 0) {
+        await axios.post("http://localhost:3000/favourite", item);
+        alert("Item added to Favourite!");
+      } else {
+        alert("Item already in Favourite!");
+      }
+    } catch (err) {
+      console.error("Failed to add item to Favourite:", err);
+      alert("Failed to add to Favourite. Try again.");
+    }
+  };
+
+  //add to cart
+   const handleAddToCart = async (item) => {
+    try {
+      const res = await axios.get(`http://localhost:3000/cart?id=${item.id}`);
+      if (res.data.length === 0) {
+        await axios.post("http://localhost:3000/cart", {
+          ...item,
+          quantity: 1,
+        });
+        alert("Item added to cart!");
+      } else {
+        alert("Item already in cart!");
+      }
+    } catch (err) {
+      console.error("Failed to add item to cart:", err);
+      alert("Failed to add to cart. Try again.");
+    }
+  };
+
 
   return (
 
@@ -160,7 +196,7 @@ const Home = () => {
 
         {/* poster */}
         <div className="poster">
-          <Link>
+          <Link to={'/loot'}>
             <img
               src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1746036953_2368-x-400.jpg?im=Resize=(2368,400)"
               alt=""
@@ -202,7 +238,7 @@ const Home = () => {
 
         {/* blockbuster */}
         <div className="blockbuster-sec">
-          <Link to={"#"}>
+          <Link to={"/blockbuster"}>
             <img src="/banner.png" alt="" />
           </Link>
         </div>
@@ -213,7 +249,7 @@ const Home = () => {
 
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <div className="subTrend">
-              <Link>
+              <Link to={'electronics?category=mobile'}>
                 <img
                   src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1745428622_smartphones.jpg?im=Resize=(368,452)"
                   alt=""
@@ -280,7 +316,7 @@ const Home = () => {
             }}
           >
             <div className="categorySec">
-              <Link>
+              <Link to={'/life?category=kitchenware'}>
                 <img
                   src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1745429148_Shop-Top--1-.jpg?im=Resize=(368,538)"
                   alt=""
@@ -403,7 +439,7 @@ const Home = () => {
                       {el.discount}
                     </h5>
                   </div>
-                  <button className="btnAdd">Add</button>
+                  <button className="btnAdd"  onClick={() => handleAddToCart(el)}>Add</button>
                 </div>
               </SwiperSlide>
             ))}
@@ -449,7 +485,7 @@ const Home = () => {
       {/* brands */}
       <div className="brands-main">
         <div className="brands-sub" style={{marginLeft:"0px"}}>
-          <Link>
+          <Link to={'/electronics?category=mobile'}>
             <img
               src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1745434588_iphone.jpg?im=Resize=(368,452)"
               alt=""
@@ -457,7 +493,7 @@ const Home = () => {
           </Link>
         </div>
         <div className="brands-sub">
-          <Link>
+          <Link >
             <img
               src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1745692978_Featured_Spotlight_1.jpg?im=Resize=(368,452)"
               alt=""
@@ -514,11 +550,11 @@ const Home = () => {
             {eProduct.map((el, index) => (
               <SwiperSlide key={index}>
                 <div className="EleCard">
-                  <button className="btnfvt"><CiHeart style={{fontSize:"20px"}} className="btnFavt"/></button>
+                  <button className="btnfvt"><CiHeart style={{fontSize:"20px"}} className="btnFavt" onClick={() => handleFav(el)}/></button>
                   <Link to={`/product/electronics/${el.id}`}>
-                    <img src={el.image} alt={el.title} className="ele-img"  />
+                    <img src={el.image} alt={el.title}className="ele-img"  />
                   </Link>
-                  <h5>{el.title}</h5>
+                  <h5>{el.title.slice(0,30)}...</h5>
                   <h4 style={{ position: "relative", top: "-10px" }}>
                     {el.price}
                   </h4>
@@ -537,7 +573,7 @@ const Home = () => {
                         margin: 0,
                       }}
                     >
-                      {el.originalPrice}
+                      {el.originalPrice || el.original_price}
                     </h4>
                     <h5
                       style={{
@@ -582,7 +618,7 @@ const Home = () => {
             {homeProduct.map((el, index) => (
               <SwiperSlide key={index}>
                 <div className="icecreamCard">
-                <button className="btnfvt"><CiHeart style={{fontSize:"20px"}} className="btnFavt"/></button>
+                <button className="btnfvt"><CiHeart style={{fontSize:"20px"}} className="btnFavt" onClick={() => handleFav(el)}/></button>
                   <Link to={`/product/home/${el.id}`}>
                     <img src={el.image} alt={el.title} className="homeP-img" />
                   </Link>
@@ -620,7 +656,7 @@ const Home = () => {
                       {el.discount}
                     </h5>
                   </div>
-                  <button className="btnAdd">Add</button>
+                  <button className="btnAdd"  onClick={() => handleAddToCart(el)}>Add</button>
                 </div>
               </SwiperSlide>
             ))}
@@ -652,12 +688,12 @@ const Home = () => {
             {fashionData.map((el, index) => (
               <SwiperSlide key={index}>
                 <div className="icecreamCard">
-                <button className="btnfvt"><CiHeart style={{fontSize:"20px"}} className="btnFavt"/></button>
+                <button className="btnfvt"><CiHeart style={{fontSize:"20px"}} className="btnFavt" onClick={() => handleFav(el)}/></button>
                   <Link to={`/product/fashion/${el.id}`}>
                     <img src={el.image} alt={el.title} className="homeP-img" />
                   </Link>
                   {/* <h5>{el.name}</h5> */}
-                  {el.name?.length> 30 ? `${el.name.slice(0, 30)}...` : el.name}
+                  {el.title?.length> 30 ? `${el.title.slice(0, 30)}...` : el.title}
                   <h4 style={{ position: "relative", top: "-10px" }}>
                     ₹{el.price}
                   </h4>
@@ -676,7 +712,7 @@ const Home = () => {
                         margin: 0,
                       }}
                     >
-                      ₹{el.original_price}
+                      ₹{el.original_price || 'NaN'}
                     </h4>
                     <h5
                       style={{
@@ -687,10 +723,10 @@ const Home = () => {
                         marginLeft: "7px",
                       }}
                     >
-                      {el.discount}
+                      {el.discount || 'NaN'}
                     </h5>
                   </div>
-                  <button className="btnAdd">Add</button>
+                  <button className="btnAdd"  onClick={() => handleAddToCart(el)}>Add</button>
                 </div>
               </SwiperSlide>
             ))}
@@ -699,7 +735,7 @@ const Home = () => {
       </div>  
 
         <div className="globalSTore">
-          <Link><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1740740463_Global-Store--2368-x-400.jpg?im=Resize=(2368,400)" alt="" /></Link>
+          <Link to={'/wellness?category=skincare'}><img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1740740463_Global-Store--2368-x-400.jpg?im=Resize=(2368,400)" alt="" /></Link>
         </div>
         
         <div className="shopping">

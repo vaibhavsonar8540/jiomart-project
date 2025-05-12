@@ -16,28 +16,33 @@ import Fashion from './Fashion/Fashion'
 import Industry from './Industry/Industry'
 import Jewellery from './Jewellery/Jewellery'
 import Wellness from './Wellness/Wellness'
-
+import LootDeal from './Pages/LootDeal'
+import Favourite from './Favourite/Favourite'
+import Blockbuster from './Pages/Blockbuster'
 
 const AllRoutes = () => {
   return (
     <div>
-        <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/grocery' element={<GroceryData/>}/>
-            <Route path='/cart' element={<Cart/>}/>
-            <Route path='/signin' element={<SignIn/>}/>
-            <Route path='/signup' element={<SignUp/>}/>
-            <Route path="/product/:category/:id" element={<PrivatePage><Description/></PrivatePage>}/>
-            <Route path='/drink' element={<Drinks/>}/>
-            <Route path='/icefrozen' element={<IceFrozen/>}/>
-            <Route path='/fruitVege' element={<FruitVegies/>}/>
-            <Route path='/life' element={<Lifestyle/>}/>
-            <Route path='/electronics' element={<Electronics/>}/>
-            <Route path='/fashion' element={<Fashion/>}/>
-            <Route path='/industrial-supplies' element={<Industry/>}/>
-            <Route path='/precious-jewellery' element={<Jewellery/>}/>
-            <Route path='/wellness' element={<Wellness/>}/>
-        </Routes>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/grocery' element={<GroceryData />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/signin' element={<SignIn />} />
+        <Route path='/signup' element={<SignUp />} />
+        <Route path="/product/:category/:id" element={<PrivatePage><Description /></PrivatePage>} />
+        <Route path='/drink' element={<Drinks />} />
+        <Route path='/icefrozen' element={<IceFrozen />} />
+        <Route path='/fruitVege' element={<FruitVegies />} />
+        <Route path='/life' element={<Lifestyle />} />
+        <Route path='/electronics' element={<Electronics />} />
+        <Route path='/fashion' element={<Fashion />} />
+        <Route path='/industrial-supplies' element={<Industry />} />
+        <Route path='/precious-jewellery' element={<Jewellery />} />
+        <Route path='/wellness' element={<Wellness />} />
+        <Route path='/loot' element={<LootDeal />} />
+         <Route path='/blockbuster' element={<Blockbuster/>} />
+        <Route path='/favourite' element={<PrivatePage><Favourite /></PrivatePage>} />
+      </Routes>
     </div>
   )
 }

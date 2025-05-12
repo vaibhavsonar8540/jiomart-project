@@ -27,6 +27,27 @@ const IceFrozen = () => {
     if (loading) return <div>Loading...</div>;
     if (error) return <div>{error}</div>;
 
+    
+  //cart
+  const handleAddToCart = async (item) => {
+    try {
+      // First check if item already exists in cart
+      const res = await axios.get(`http://localhost:3000/cart?id=${item.id}`);
+      if (res.data.length === 0) {
+        await axios.post("http://localhost:3000/cart", {
+          ...item,
+          quantity: 1
+        });
+        alert("Item added to cart!");
+      } else {
+        alert("Item already in cart!");
+      }
+    } catch (err) {
+      console.error("Failed to add item to cart:", err);
+      alert("Failed to add to cart. Try again.");
+    }
+  };
+
   return (
     <div>
     <NavbarUp/>
@@ -43,7 +64,7 @@ const IceFrozen = () => {
             <span className="discount">{el.discount}</span>
           </div>
           <div className="quantity">{el.quantity || 'N/A'}</div>
-          <button className="add-button">Add</button>
+          <button className="add-button" onClick={() => handleAddToCart(el)}>Add</button>
         </div>
       ))}
     </div>

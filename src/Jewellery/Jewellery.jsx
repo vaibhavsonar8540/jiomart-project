@@ -86,7 +86,7 @@ const Industry = () => {
               <div className="product-card" key={el.id}>
                 <span className="smart-bazaar-badge">SMART BAZAAR</span>
                 <span className="favorite-icon"><CiHeart /></span>
-                <Link to={`/product/lifestyle/${el.id}`}>
+                <Link to={`/product/preciousJewellery/${el.id}`}>
                   <img src={el.image} alt={el.title} className="product-image" />
                 </Link>
                 <div className="product-title">{el.title}</div>

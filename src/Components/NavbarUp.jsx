@@ -5,102 +5,93 @@ import { IoIosSearch } from "react-icons/io";
 import { RiListCheck } from "react-icons/ri";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoPersonCircleOutline } from "react-icons/io5";
+import { CiHeart } from "react-icons/ci";
 import NavbarDown from "../Components/NavbarDown";
-
+import './NavDown.css'; 
+import { signOut } from "firebase/auth";
+import { auth } from "../Service";
 
 const NavbarUp = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
 
-// Inside NavbarUp component
-const [searchTerm, setSearchTerm] = useState("");
-const navigate = useNavigate();
-const [searchParams] = useSearchParams();
-
-const handleSearch = (e) => {
-  if (e.key === "Enter") {
-    const params = new URLSearchParams(searchParams);
-    if (searchTerm.trim()) {
-      params.set("q", searchTerm);
-    } else {
-      params.delete("q");
+  const handleSearch = (e) => {
+    if (e.key === "Enter") {
+      const params = new URLSearchParams(searchParams);
+      if (searchTerm.trim()) {
+        params.set("q", searchTerm);
+      } else {
+        params.delete("q");
+      }
+      navigate({ search: params.toString() });
     }
-    navigate({ search: params.toString() });
-  }
-};
+  };
+
+  // logout
+    const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      navigate("/signin"); // redirect to signin page
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
+  };
 
 
   return (
-  
     <div>
-    <div style={{ backgroundColor: "#0078AD", height: "90px" }}>
-      <div
-        style={{
-          width: "80%",
-          margin: "auto",
-          display: "flex",
-          alignContent: "center",
-          justifyContent: "space-between",
-        }}
-      >
-        <div>
-          <Link to={"/"}>
+      <div className="navbar-up-container">
+        <div className="navbar-up-inner">
+          <Link to="/">
             <img
               src="https://www.jiomart.com/assets/ds2web/images/Jiomart-logo-ds2.0.svg?v=24"
               alt="Logo"
-              height={"100px"}
-              width={"100px"}
+              height="100"
+              width="100"
             />
           </Link>
-        </div>
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <div>
+
+          <div className="navbar-location">
             <FaLocationDot style={{ color: "white" }} />
+            <p>Deliver to Mumbai 400020</p>
           </div>
-          <div>
-            <p style={{ color: "white" }}>Deliver to Mumbai 400020</p>
+
+          <div className="search-bar">
+            <div className="search-icon">
+              <IoIosSearch fontSize="27px" />
+            </div>
+            <input
+              type="text"
+              placeholder="Search Jiomart"
+              className="search-input"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              onKeyDown={handleSearch}
+            />
+            <div className="list-icon">
+              <RiListCheck fontSize="27px" />
+            </div>
           </div>
-        </div>
-        <div style={{ display: "flex", alignItems: "center" }}>
 
-          {/* search */}
-        <div className="search-bar">
-      <div className="search-icon">
-        <IoIosSearch fontSize="27px" />
-      </div>
-      <input
-        type="text"
-        placeholder="Search Jiomart"
-        className="search-input"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        onKeyDown={handleSearch}
-      />
+          <Link to="/cart" className="icon-link">
+            <FaShoppingCart color="white" fontSize="23px" />
+          </Link>
 
-      <div className="list-icon">
-        <RiListCheck fontSize="27px" />
-      </div>
-    </div>
-        </div>
-        <div style={{display:"flex",alignItems:"center"}}>
-          {" "}
-          <Link to={"/cart"}>
-            <FaShoppingCart color="white" fontSize={"23px"}/>
-          </Link>{" "}
-        </div>
-        <div style={{display:"flex",alignItems:"center"}}>
-          {" "}
-          <Link  to={"/signin"}
-            style={{ display: "flex", textDecoration: "none", color: "white",alignItems:"center" }}
-          >
-            <IoPersonCircleOutline  fontSize={"26px"}/>
-            <p style={{fontWeight:"bolder",fontSize:"19px",marginLeft:"5px"}}>Sign In</p>
-          </Link>{" "}
+          <Link to="/signin" className="signin-link">
+            <IoPersonCircleOutline fontSize="26px" />
+            <p>Sign In</p>
+          </Link>
+
+          <Link to="/favourite" className="icon-link">
+            <CiHeart style={{ color: "white" }} />
+          </Link>
+
+          <button className="logout-btn" onClick={handleLogout}>Log Out</button>
         </div>
       </div>
+      <NavbarDown />
     </div>
-    <NavbarDown/>
-    
-    </div>
- 
   );
 };
 
